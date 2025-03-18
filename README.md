@@ -5,13 +5,13 @@ Ultra simple SSH tunnelling for Go programs.
 ## Installation
 
 ```bash
-go get -u github.com/elliotchance/sshtunnel
+go get -u github.com/deekthesqueak/sshtunnel
 ```
 
 Or better with `dep`:
 
 ```bash
-dep ensure -add github.com/elliotchance/sshtunnel
+dep ensure -add github.com/deekthesqueak/sshtunnel
 ```
 
 ## Example

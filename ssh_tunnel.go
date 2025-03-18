@@ -90,6 +90,8 @@ func (tunnel *SSHTunnel) Serve(listener net.Listener) error {
 	total = len(tunnel.Conns)
 	for i, conn := range tunnel.Conns {
 		tunnel.logf("closing the netConn (%d of %d)", i+1, total)
+		tunnel.logf("local: %s", conn.LocalAddr())
+		tunnel.logf("remote: %s", conn.RemoteAddr())
 		err := conn.Close()
 		if err != nil {
 			if errors.Is(err, net.ErrClosed) {
